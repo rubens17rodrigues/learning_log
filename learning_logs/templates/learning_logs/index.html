@@ -1,6 +1,15 @@
 {% extends "learning_logs/base.html" %}
 
-{% block content %}
-    <p>Learning Log ajuda a gerenciar seus conhecimentos
-    sobre determinado tópico.</p>
-    {% endblock content %}
+{% block page_header %}
+  <div class='jumbotron'>
+    <h1 class = "display-4">Gerencie seu aprendizado.</h1>
+  
+    <p class ="lead"> Gerencie seu aprendizado, e mantenha uma lista dos
+    assuntos do seu interesse. Quando aprender algo novo sobre o assunto crie
+    uma nova entrada resumindo aquilo que aprendeu.
+    </p>
+
+  <a class="btn-lg btn-primary" href="{% url 'users:register' %}"
+      role="button">Cadastrar &raquo;</a>
+  </div>
+{% endblock page_header %}
