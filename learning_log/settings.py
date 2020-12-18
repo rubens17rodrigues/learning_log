@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Minhas aplicações
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Minhas configurações
+LOGOUT_REDIRECT_URL = 'learning_logs:index'
+LOGIN_URL = '/users/login'
